@@ -811,6 +811,7 @@ where
             .child(
                 div()
                     .id("input")
+                    .w_full()
                     .relative()
                     .flex()
                     .items_center()
