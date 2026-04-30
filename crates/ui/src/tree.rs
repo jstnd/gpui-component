@@ -397,6 +397,7 @@ impl TreeState {
         self.scroll_handle
             .scroll_to_item(selected_ix, gpui::ScrollStrategy::Top);
         cx.notify();
+        cx.propagate();
     }
 
     fn on_action_down(&mut self, _: &SelectDown, _: &mut Window, cx: &mut Context<Self>) {
